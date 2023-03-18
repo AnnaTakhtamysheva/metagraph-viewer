@@ -9,7 +9,7 @@ interface Props {
 	colorBackground?: string;
 }
 
-export const Scene3d: React.FC<Props> = ({graph, colorBackground = '#ddd', colorEdge, colorVertex}: Props) => {
+export const Scene3d: React.FC<Props> = ({graph, colorBackground = '#222', colorEdge, colorVertex}: Props) => {
 	const ref = useRef<HTMLDivElement>(null);
 	const [scene, setScene] = useState(new Scene({ graph, colorVertex, colorEdge }));
 
